@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:id="@+id/imageView2"
+            android:scaleType="fitXY"
+            />
+
+        <com.joooonho.SelectableRoundedImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_user_dp"
+            app:sriv_border_color="#FFFFFF"
+            app:sriv_border_width="2dp"
+            app:sriv_oval="true"
+            android:layout_below="@+id/bt_settings"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:id="@+id/bt_settings"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:id="@+id/bt_edit"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="med"
+            android:id="@+id/tv_name_age"
+            android:layout_below="@+id/iv_user_dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/tv_profession"
+            android:layout_above="@+id/bt_details"
+            android:layout_alignEnd="@+id/iv_user_dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:id="@+id/bt_details"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_toStartOf="@+id/tv_name_age" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listings"
+            android:id="@+id/bt_listings"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_toEndOf="@+id/tv_name_age" />
+
+        <TextView
+            android:text="lorem ipsum  lorem ipsum  lorem ipsumlorem ipsum  lorem ipsum  lorem ipsumlorem ipsum  lorem ipsum  lorem ipsumlorem ipsum  lorem ipsum  lorem ipsumlorem ipsum  lorem ipsum  lorem ipsumlorem ipsum  lorem ipsum  lorem ipsumlorem ipsum  lorem ipsum  lorem ipsumlorem ipsum  lorem ipsum  lorem ipsumlorem ipsum  lorem ipsum  lorem ipsum"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/tv_description"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram Connect"
+            android:id="@+id/tv_insta_title"
+            android:layout_below="@+id/tv_description"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold" />
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gv_insta"
+            android:layout_below="@+id/tv_insta_title"
+            android:layout_alignParentStart="true" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_below="@+id/gv_insta"
+            android:id="@+id/radioGroup"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:button="@drawable/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_female"
+                    android:checked="false"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="22dp" />
+
+                <RadioButton
+                    android:button="@drawable/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_male"
+                    android:checked="false"
+
+                    android:layout_toEndOf="@+id/radio_female" />
+
+                <RadioButton
+                    android:button="@drawable/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_male3"
+                    android:checked="false"
+
+                    android:layout_toEndOf="@+id/radio_male" />
+
+                <RadioButton
+                    android:button="@drawable/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_male1"
+                    android:checked="false"
+
+                    android:layout_toEndOf="@+id/radio_male" />
+
+                <RadioButton
+                    android:button="@drawable/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_male2"
+                    android:checked="false"
+                    android:layout_below="@+id/radio_female"
+
+                    android:layout_marginStart="22dp"/>
+
+                <RadioButton
+                    android:button="@drawable/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_male4"
+                    android:checked="false"
+
+                    android:layout_toStartOf="@+id/radio_male1" />
+
+            </RelativeLayout>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Langauges"
+            android:id="@+id/tv_lang"
+            android:layout_below="@id/radioGroup"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="English,Hindi"
+            android:id="@+id/tv_lang_ans"
+            android:layout_below="@+id/tv_lang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="From"
+            android:id="@+id/tv_from"
+            android:layout_below="@id/tv_lang_ans"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Mumbai,India"
+            android:id="@+id/tv_from_ans"
+            android:layout_below="@+id/tv_from" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Interest"
+            android:id="@+id/tv_interest"
+            android:layout_below="@id/tv_from_ans"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Elon Musk   Loreum ipsum   Loreum ipsum   Loreum ipsum   Loreum ipsum"
+            android:id="@+id/tv_interest_ans"
+            android:layout_below="@+id/tv_interest" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_user_list"
+            android:layout_below="@id/tv_interest_ans"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

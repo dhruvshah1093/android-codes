@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.joooonho.SelectableRoundedImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_dp"
+        app:sriv_border_color="#FFCC00"
+        app:sriv_border_width="2dp"
+        app:sriv_oval="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/photos"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/user_name"
+        android:layout_alignTop="@+id/user_age"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="21"
+        android:id="@+id/user_age"
+        android:layout_below="@+id/iv_dp"
+        android:layout_toEndOf="@+id/iv_dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Student"
+        android:id="@+id/Profession"
+        android:layout_below="@+id/user_name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Age"
+        android:id="@+id/textViewAge"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="41dp"
+        android:layout_below="@+id/Profession"
+        android:layout_toStartOf="@+id/iv_dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="20-30"
+        android:id="@+id/search_age"
+        android:layout_below="@+id/textViewAge"
+        android:layout_alignStart="@+id/textViewAge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Looking For"
+        android:id="@+id/textViewGender"
+        android:layout_above="@+id/Gender"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Male"
+        android:id="@+id/Gender"
+        android:layout_alignTop="@+id/search_age"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Movein"
+        android:id="@+id/textViewMovein"
+        android:layout_alignTop="@+id/textViewGender"
+        android:layout_toEndOf="@+id/user_age" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="04/16"
+        android:id="@+id/movein_date"
+        android:layout_below="@+id/textViewMovein"
+        android:layout_alignStart="@+id/textViewMovein" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/TextViewRent"
+        android:layout_alignBottom="@+id/photos"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:id="@+id/tb_like"
+        android:layout_below="@+id/photos"
+        android:layout_toEndOf="@+id/user_age"
+        android:checked="false" />
+
+</RelativeLayout>

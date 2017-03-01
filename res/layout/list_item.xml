@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:id="@+id/user_dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/listing_images" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/user_name"
+            android:textStyle="bold"
+            android:text="name"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/user_dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/listing_address"
+            android:textStyle="normal|italic"
+            android:text="address"
+            android:layout_below="@+id/user_name"
+            android:layout_toEndOf="@+id/user_dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/listing_images"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_marginRight="5.0sp"
+            android:layout_marginLeft="5.0sp"
+            android:layout_below="@+id/user_dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/listing_rent"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:visibility="visible"
+            android:textColor="#FFF"
+            android:layout_alignBottom="@+id/listing_images"
+            android:layout_alignStart="@+id/listing_images" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>
